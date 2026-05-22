@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #1f2937;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h2 {
+            margin: 0;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            padding: 8px 14px;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: #374151;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(to right, #6366f1, #4f46e5);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .hero a {
+            text-decoration: none;
+            background-color: white;
+            color: #4f46e5;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .hero a:hover {
+            background-color: #e0e7ff;
+        }
+
+        /* Features */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 60px 20px;
+        }
+
+        .feature-box {
+            background-color: white;
+            width: 280px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .feature-box h3 {
+            margin-bottom: 10px;
+            color: #4f46e5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1f2937;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2>Eventify</h2>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Events</a>
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'register' %}">Register</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Book Your Events Seamlessly</h1>
+        <p>Discover, register, and manage events with ease — all in one place.</p>
+        <a href="#">Explore Events</a>
+    </div>
+
+    <!-- Features -->
+    <div class="features">
+        <div class="feature-box">
+            <h3>Easy Booking</h3>
+            <p>Book events in just a few clicks with a smooth user experience.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>User Login</h3>
+            <p>Secure login system to manage your bookings and profile.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Event Management</h3>
+            <p>Organizers can create, update, and manage events effortlessly.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Eventify | All Rights Reserved
+    </footer>
+
+</body>
+</html>
